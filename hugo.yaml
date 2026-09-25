@@ -1,0 +1,116 @@
+baseURL: https://0xc0de.xyz/
+locale: zh-TW
+title: "0xc0de"
+theme: PaperMod
+paginate: 10
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+params:
+  env: production
+  title: "0xc0de"
+  description: "0xc0de - Built by Hugo and PaperMod"
+  keywords: [Linux, QEMU, RISC-V, Computer Architecture]
+  author: "Frank Chang"
+  images: ["<link or path of image for opengraph, twitter-cards>"]
+  DateFormat: "2006/01/02"
+  defaultTheme: auto # dark, light
+  disableThemeToggle: false
+
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowWordCount: true
+  ShowRssButtonInSectionTermList: true
+  ShowFullTextinRSS: true
+  UseHugoToc: true
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: true
+  hidemeta: false
+  hideSummary: false
+  showtoc: false
+  tocopen: false
+
+  assets:
+    favicon: /favicon.ico
+
+  label:
+    text: "0xc0de"
+    icon: /apple-touch-icon.png
+    iconHeight: 35
+
+  homeInfoParams:
+    Title: "Hello World!"
+    Content: Linux Kernel, QEMU, and RISC-V
+
+  socialIcons:
+    - name: github
+      url: "https://github.com/frankchang0125"
+    - name: linkedin
+      url: "https://www.linkedin.com/in/frankchang0125"
+    - name: email
+      url: "mailto:frankchang0125@gmail.com"
+
+  analytics:
+    google:
+      SiteVerificationTag: "XYZabc"
+
+  cover:
+    hidden: true # hide everywhere but not in structured data
+    hiddenInList: true # hide on list pages and home
+    hiddenInSingle: true # hide on single page
+
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    limit: 10 # refer: https://www.fusejs.io/api/methods.html#search
+    keys: ["title", "permalink", "summary", "content"]
+
+menu:
+  main:
+    - identifier: archives
+      name: "全部文章"
+      url: /archives/
+      weight: 10
+    - identifier: categories
+      name: "文章分類"
+      url: /categories/
+      weight: 20
+    - identifier: tags
+      name: "標籤"
+      url: /tags/
+      weight: 30
+    - identifier: search
+      name: "搜尋"
+      url: /search/
+      weight: 40
+
+# Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
+pygmentsUseClasses: true
+markup:
+  highlight:
+    noClasses: false
+    anchorLineNos: true
+    codeFences: true
+    guessSyntax: true
+    lineNos: true
