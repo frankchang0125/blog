@@ -1,0 +1,4 @@
+/* Keep Monokai style while improving comment contrast. */
+.chroma [style*="color:#75715e"] {
+    color: #c2c2c2 !important;
+}
