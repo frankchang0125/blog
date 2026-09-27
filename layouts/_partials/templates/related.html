@@ -1,0 +1,12 @@
+{{- with site.RegularPages.Related . | first 5 }}
+<div class="post-section related-posts">
+    <h3 class="see-also">{{ i18n "related_posts_title" }}</h3>
+    <ul>
+        {{- range . }}
+        <li>
+            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+        </li>
+        {{- end }}
+    </ul>
+</div>
+{{- end }}

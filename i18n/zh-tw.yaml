@@ -1,3 +1,5 @@
 - id: posts
   translation: "文章"
 
+- id: related_posts_title
+  translation: "你可能也會感興趣的文章"

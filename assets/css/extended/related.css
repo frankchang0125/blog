@@ -1,0 +1,22 @@
+.post-section {
+    padding: var(--content-gap);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background: var(--code-bg);
+}
+
+.related-posts {
+    margin-bottom: var(--gap);
+}
+
+.post-section > *:not(:last-child) {
+    margin-bottom: 8px;
+}
+
+.post-section a {
+    box-shadow: 0 1px;
+}
+
+.related-posts ul {
+    padding-inline-start: 20px;
+}

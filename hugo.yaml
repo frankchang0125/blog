@@ -24,6 +24,16 @@ services:
   googleAnalytics:
     id: "G-NE2WYBYMXJ"
 
+related:
+  threshold: 80
+  includeNewer: true
+  toLower: true
+  indices:
+    - name: "tags"
+      weight: 100
+    - name: "date"
+      weight: 10
+
 params:
   env: production
   title: "0xc0de"
