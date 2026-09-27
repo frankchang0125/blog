@@ -12,3 +12,12 @@
 
 - id: taxonomy_tags
   translation: "標籤"
+
+- id: series_article_intro
+  translation: "這篇文章是"
+
+- id: series_article_position
+  translation: "系列文的第"
+
+- id: series_article_suffix
+  translation: "篇。"

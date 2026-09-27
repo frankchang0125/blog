@@ -1,0 +1,15 @@
+{{- $current := . -}}
+{{- range .GetTerms "series" -}}
+  {{- $series := . -}}
+  {{- range $index, $page := $series.Pages.ByDate -}}
+    {{- if eq $page.RelPermalink $current.RelPermalink }}
+<div class="post-section series-header">
+    <p>
+        {{ i18n "series_article_intro" }}
+        <a href="{{ $series.RelPermalink }}">{{ $series.LinkTitle }}</a>
+        {{ i18n "series_article_position" }} {{ add $index 1 }} {{ i18n "series_article_suffix" }}
+    </p>
+</div>
+    {{- end }}
+  {{- end }}
+{{- end }}
