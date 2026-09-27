@@ -3,3 +3,12 @@
 
 - id: related_posts_title
   translation: "你可能也會感興趣的文章"
+
+- id: taxonomy_series
+  translation: "系列文"
+
+- id: taxonomy_categories
+  translation: "文章分類"
+
+- id: taxonomy_tags
+  translation: "標籤"

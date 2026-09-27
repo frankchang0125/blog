@@ -34,6 +34,11 @@ related:
     - name: "date"
       weight: 10
 
+taxonomies:
+  series: series
+  category: categories
+  tag: tags
+
 params:
   env: production
   title: "0xc0de"
