@@ -3,7 +3,7 @@ date: "2020-02-01T14:57:43+08:00"
 title: "QEMU Decodetree 語法介紹 (Part 2.)"
 author: "Frank Chang"
 categories:
-  - "Emulation"
+  - "Emulator"
 tags:
   - "QEMU"
   - "RISC-V"
