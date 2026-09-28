@@ -2,3 +2,13 @@
 .chroma [style*="color:#75715e"] {
     color: #c2c2c2 !important;
 }
+
+/* Inline code color (light mode). */
+.post-content :not(pre) > code {
+    color: #cf5148;
+}
+
+/* Inline code color (dark mode). */
+:root[data-theme="dark"] .post-content :not(pre) > code {
+    color: #d96861;
+}
